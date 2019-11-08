@@ -1,0 +1,79 @@
+body{
+	max-width: 525px;
+	margin:0px auto 0px auto;
+	display: block;
+}
+h1, h2{
+	text-align: center;
+}
+#generador, #generado{
+	text-align: center;
+}
+#generador{
+	margin-bottom: 150px;
+}
+#selecionar_tipo{
+	margin:-20px auto 20px auto;
+}
+#selecionar_tipo > label {
+	width: 300px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+#boton_crear{
+	float:left;
+}
+#boton_enviar{
+	float: right;
+}
+#generado{
+	border: solid 1px grey;
+	clear:both;
+	padding:0px 10px 0px 40px;
+	height: 100%;
+}
+.gen-caja{
+	clear: both;
+	min-height: 20px;
+	margin:5px auto 5px auto;
+}
+.input-texto, .input-numero, .input-email, .select-lista{
+	width: 250px;
+	float: right;
+}
+.label-texto, .label-numero, .label-email, .label-lista, .label-opciones{
+	width: 200px;
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
+	text-align: right;
+	font-weight: bold;
+}
+.opciones{
+	float: right;
+	text-align: left;
+}
+.opc_exc, .opc_no_exc{
+	margin: 20px auto 20px auto;
+}
+.opc_exc div label, .opc_no_exc div label {
+	width: 250px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+.label-opciones{
+	float: left;
+}
+.boton-generado{
+	clear: both;
+	margin-bottom: 30px;
+}
+input[type="button"],input[type="submit"]{
+	display: block;
+	width: 200px;
+	height: 50px;
+	background: #DDD;
+	margin:20px auto 0 auto;
+}

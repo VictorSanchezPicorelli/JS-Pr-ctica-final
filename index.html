@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Práctica Final Generador</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+	<h1>Generador de formularios</h1>
+	<form id=generador>	
+		<h2 for="tipo">Escoge un tipo de elemento</h2><br/>
+		<div id="selecionar_tipo">
+			<input name="tipo" type="radio" value="texto" id="tipo-texto" checked="checked">
+			<label for="tipo-texto">Texto</label><br/>
+			<input name="tipo" type="radio" value="numero" id="tipo_numero">
+			<label for="tipo-numero">Número</label><br/>
+			<input name="tipo" type="radio" value="email" id="tipo-email">
+			<label for="tipo-email">Email</label><br/>
+			<input name="tipo" type="radio" value="lista" id="tipo-lista">
+			<label for="tipo-lista">Lista de selección</label><br/>
+			<input name="tipo" type="radio" value="opc_no_exc" id="tipo-opc_no_exc">
+			<label for="tipo-opc_no_exc">Opciones no exclusivas de selección</label><br/>
+			<input name="tipo" type="radio" value="opc_exc" id="tipo-opc_exc">
+			<label for="tipo-opc_exc">Opciones exclusivas de selección</label><br/>
+		</div>
+		<div>
+			<input id="boton_crear" type="button" value="Crear Elemento" onclick="crea_elemento(tipo.value)">
+		</div>
+		<div>
+			<input id="boton_enviar" type="button" value="Añadir botón de envío" onclick="nuevo_boton()">
+		</div>
+	</form>
+
+	<form id="generado" style="visibility:hidden;">
+		<h1>Este es tu formulario</h1>
+		<h2 id="titulo-formulario-gen"></h2>
+	</form>
+	</body>
+</html>
